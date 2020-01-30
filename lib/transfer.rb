@@ -13,7 +13,7 @@ attr_accessor :status
     sender.valid? && receiver.valid?
   end
 
-  def execute_transaction
+  def self.execute_transaction
     #if sender account is valid and balance is > amount and status is pending
     if sender.valid? && sender.balance > amount && status == "pending" && receiver.valid?
     #if reciever account is valid
