@@ -18,8 +18,8 @@ attr_accessor :status
     if sender.valid? && sender.balance > amount && status == "pending" && receiver.valid?
     #if reciever account is valid
     # transfer amount
-      sender.balance = sender.balance - amount
-      reciever.balance += amount
+      @sender.balance = sender.balance - amount
+      @reciever.balance += amount
       status == "complete"
     # transfer change status to complete
     #otherwise state check account balance
