@@ -8,7 +8,8 @@ class BankAccount
   end
 
   def deposit(amount)
-     amount.to_i << self
+     bankaccount = amount.to_i
+     bankaccount
   end
 
 end
