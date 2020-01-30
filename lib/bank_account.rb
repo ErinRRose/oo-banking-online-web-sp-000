@@ -21,6 +21,6 @@ class BankAccount
   end
 
   def close_account
-    close_account if status == "closed"
+    self.status = "closed"
   end
 end
