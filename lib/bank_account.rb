@@ -8,6 +8,7 @@ class BankAccount
   end
 
   def deposit(amount)
-    balance << self
+     amount.to_i << self
   end
+
 end
