@@ -20,7 +20,7 @@ attr_accessor :status
     # transfer amount
       sender.balance = sender.balance - amount
       receiver.balance = receiver.balance + amount
-      status = "complete"
+      self.status = "complete"
     # transfer change status to complete
     #otherwise state check account balance
     else
