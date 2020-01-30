@@ -9,4 +9,8 @@ attr_accessor :status
     @status = "pending"
   end
 
+  def valid?
+    sender.valid? && receiver.valid?
+  end
+
 end
