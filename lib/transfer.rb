@@ -15,7 +15,7 @@ attr_accessor :status
 
   def execute_transaction
     #if sender account is valid and balance is > amount and status is pending
-    if sender.valid? && sender.@balance > amount && status == "pending" && receiver.valid?
+    if sender.valid? && sender.balance > amount && status == "pending" && receiver.valid?
     #if reciever account is valid
     # transfer amount
       sender.balance = sender.balance - amount
