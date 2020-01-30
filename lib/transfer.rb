@@ -24,7 +24,7 @@ attr_accessor :status
     # transfer change status to complete
     #otherwise state check account balance
     else
-      status == "rejected"
+      status = "rejected"
       "Transaction rejected. Please check your account balance."
     end
   end
